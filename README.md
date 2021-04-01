@@ -19,11 +19,11 @@ In this analysis we learned and applied:
 
 ## Results
 
-The original dataset contained 1,252 entries, however only 1,144 cryptocurrencies were currently trading. The data was further preprocessed to remove `null values` and cryptocurrencies that had a total number of mined coins greater than 0. The results identified 532 tradable cryptocurrencies. 
+The original dataset contained 1,252 entries, however only 1,144 cryptocurrencies were currently trading. The data was further munged to remove `null values` and only leave cryptocurrencies that had a total number of mined coins greater than 0. The final results identified 532 tradable cryptocurrencies. 
 
 ![cryptotable](https://github.com/amylio/Cryptocurrencies/blob/main/Resources/Images/CryptoTable.png)
 
-The **Elbow Curve** method identified 4 clusters for the `KMeans` algorithm.
+The **Elbow Curve** method showed the slope at 4. This is the number of clusters that was used for the `KMeans` algorithm.
 
 ![Elbow](https://github.com/amylio/Cryptocurrencies/blob/main/Resources/Images/ElbowCurve.png)
 
